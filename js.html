@@ -9,11 +9,12 @@
     <title>JavaScript Playgrounds</title>
 </head>
 
-<body style="background-color: black;">
+<body>
+    <!-- style="background-color: black;" -->
     <nav>
         <a href="index.html">&gt; back &lt;</a>
     </nav>
-    <h2>JavaScript Playground</h2>
+    <h2>JavaScript Playground <br> What Can JavaScript Do? </h2>
     <br>
     <p>Hello World!</p>
     <p>JavaScript can change HTML attribute values.</p>
@@ -22,14 +23,34 @@
     <div>
         <img id="myimage" src="images/pic_bulboff.gif" style="width:100px;">
         <div class="on-btn-div">
-            <button onclick="lightbulbon(); bg_on()">Turn on the light</button>
+            <button onclick="lightbulb_on(); bg_on()">Turn on the light</button>
         </div>
         <div class="off-btn-div">
-            <button onclick="lightbulboff(); bg_off()">Turn off the light</button>
+            <button onclick="lightbulb_off(); bg_off()">Turn off the light</button>
         </div>
     </div>
     <!-- End of lightbulb Demo -->
     <hr>
+    <!-- Start of JS HTML Styles -->
+    <h2>What other things can JavaScript Do?</h2>
+
+    <p id="px">JavaScript can change the style of an HTML element.</p>
+
+    <button type="button" onclick="big_size()">Change size to 35px</button>
+    <button type="button" onclick="normal_size()">Change size back to normal</button>
+    <p>Use "initial" to set the font size to default values which is the medium.</p>
+    <!-- End of JS HTML Styles -->
+    <hr>
+    <!-- Start of JS hide/show HTML Elements -->
+    <p id="hide/show">JavaScript can hide and show HTML elements.</p>
+    <button type="button" onclick="hide_Elem()">Hide Me!</button>
+    <button type="button" onclick="show_Elem()">Show Me!</button>
+
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="hidden_txt" style="display: none;">Pekaboo!</p>
+    <button type="button" onclick="show_hidden_Elem()">Unhide Me!</button>
+    <!-- End of JS hide/show HTML Elements -->
+
     <script src="js.js"></script>
 </body>
 
